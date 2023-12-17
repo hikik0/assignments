@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@600&family=Playfair+Display&family=Roboto&display=swap');
+        body {
+            font-family: 'Kalnia', serif;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        table{
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+            justify-content: center;
+            min-height: 300px;
+            width: 100%;
+            text-align: center;
+           
+        }
+
+
+        th, td {
+            padding: 45px;
+        }
+
+
+        .week {
+            background-color: blanchedalmond;
+            font-size: 20px;
+        }
+
+
+        .month {
+            background-color: rgb(253, 214, 155);
+            height: 100px;
+           
+            font-size: 40px;
+        }
+
+
+        .weekend {
+            background-color: rgb(243, 216, 181);
+        }
+
+
+        .week1,.week2,.week3,.week4,.week5{
+            font-size: 20px;
+        }
+
+
+        .holiday {
+            background-color: rgb(255, 185, 81);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th class="month", colspan="7">January</th>
+        </tr>
+        <tr class="week">
+            <th>Mon</th>
+            <th>Tues</th>
+            <th>Wed</th>
+            <th>Thurs</th>
+            <th>Fri</th>
+            <th>Sat</th>
+            <th class="weekend">Sun</th>
+        </tr>
+        <tr class="week1">
+            <td class="holiday"
+            onmouseover="this.innerHTML='New Years Day';"
+            onmouseout="this.innerHTML='1';">1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td class="weekend">7</td>
+        </tr>
+        <tr class="week2">
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td class="holiday"
+            onmouseover="this.innerHTML='Lohri';"
+            onmouseout="this.innerHTML='13';">13</td>
+            <td class="holiday" style="background-color: rgb(243, 216, 181);"
+            onmouseover="this.innerHTML='Makar Sankranti';"
+            onmouseout="this.innerHTML='14';">14</td>
+        </tr>
+        <tr class="week3">
+            <td class="holiday"
+            onmouseover="this.innerHTML='Pongal';"
+            onmouseout="this.innerHTML='15';">15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td class="weekend">21</td>
+        </tr>
+        <tr class="week4">
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td class="holiday"
+            onmouseover="this.innerHTML='Republic Day';"
+            onmouseout="this.innerHTML='26';">26</td>
+            <td>27</td>
+            <td class="weekend">28</td>
+        </tr>
+        <tr class="week5">
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+        </tr>
+    </table>
+</body>
+</html>
+
