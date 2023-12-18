@@ -5,15 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2 BCA B Schedule</title>
     <link rel="icon" type="image/x-icon" href="./calendar_month_FILL0_wght400_GRAD0_opsz24.svg">
+    <script>
+        var i = 0;
+        var images = [];
+        var slideTime = 2000; // 3 seconds
+            
+        images[0] = './sleepingcat.jpeg';
+        images[1] = './some-peep-maker.jpeg';
+        images[2] = './776385c6a31e38bac208da2ce3534206.jpg';
+        images[3] = './Crying-cat.jpeg';
+            
+        function changePicture() {
+            document.body.style.backgroundImage = "url(" + images[i] + ")";
+        
+            if (i < images.length - 1) {
+                i++;
+            } else {
+                i = 0;
+            }
+            setTimeout(changePicture, slideTime);
+        }
+        
+        window.onload = changePicture;
+    </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
-        body{
+        body {
             font-family: 'Roboto Mono', monospace;
             background-color: #D5DDDF;
+            background-image: url(./sleepingcat.jpeg);
         }
 
-        table{
+
+        table {
             margin-left: auto;
             margin-right: auto;
             text-align: center;
